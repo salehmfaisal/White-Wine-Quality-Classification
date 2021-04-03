@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang= "en" dir="ltr">
+ <head>
+  <meta charset="utf-8">
+  <title> </title>
+  </head>
+  <body>
+   
+   
+   <h1>Welcome to Wine world!!! (Check Before you Buy) </h1>
+   
+   <h3> Enter your preferred attributes </h3>
+   
+   <div class = "container">
+   <form action="{% url 'result' %}" >
+   
+   {% csrf_token %}
+   
+   fixed acidity: <input type="float" required name="fixed acidity"> <br> <br>
+      volatile acidity: <input type="float" required name="volatile acidity"> <br> <br>
+         citric acid: <input type="float" required name="citric acid"> <br> <br>
+            residual sugar: <input type="float" required name="residual sugar"> <br> <br>
+
+   chlorides: <input type="float" required name="chlorides"> <br> <br>
+      total sulfur dioxide: <input type="float" required name="total sulfur dioxide"> <br> <br>
+         density: <input type="float" required name="density"> <br> <br>
+            sulphates: <input type="float" required name="sulphates"> <br> <br>
+               alcohol: <input type="float" required name="alcohol"> <br> <br>
+
+
+
+
+   
+   
+   <input type="submit" name="" value="submit">
+   
+   </form>
+   
+   </div>
+   
+  </body>
+  </html>
+  
